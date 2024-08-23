@@ -8,4 +8,31 @@
 	 <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="DataAccess\Abstractions\obj\**" />
+    <Compile Remove="DataAccess\obj\**" />
+    <Compile Remove="Domain\Logic\obj\**" />
+    <Compile Remove="Domain\Logic\TaskPlanner.Domain.Logic.Tests\bin\**" />
+    <Compile Remove="Domain\Logic\TaskPlanner.Domain.Logic.Tests\obj\**" />
+    <EmbeddedResource Remove="DataAccess\Abstractions\obj\**" />
+    <EmbeddedResource Remove="DataAccess\obj\**" />
+    <EmbeddedResource Remove="Domain\Logic\obj\**" />
+    <EmbeddedResource Remove="Domain\Logic\TaskPlanner.Domain.Logic.Tests\bin\**" />
+    <EmbeddedResource Remove="Domain\Logic\TaskPlanner.Domain.Logic.Tests\obj\**" />
+    <None Remove="DataAccess\Abstractions\obj\**" />
+    <None Remove="DataAccess\obj\**" />
+    <None Remove="Domain\Logic\obj\**" />
+    <None Remove="Domain\Logic\TaskPlanner.Domain.Logic.Tests\bin\**" />
+    <None Remove="Domain\Logic\TaskPlanner.Domain.Logic.Tests\obj\**" />
+
+	  <PackageReference Include="xunit" Version="2.9.0" />
+	  <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+	    <PrivateAssets>all</PrivateAssets>
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+	  <PackageReference Include="Moq" Version="4.20.71" />
+  </ItemGroup>
+
+
 </Project>

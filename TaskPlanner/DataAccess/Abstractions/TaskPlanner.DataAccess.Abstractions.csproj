@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Moq" Version="4.20.71" />
+    <PackageReference Include="xunit" Version="2.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Logic\TaskPlanner.Logic.csproj" />
     <ProjectReference Include="..\..\TaskPlanner.csproj" />
+    <ProjectReference Include="..\TaskPlanner.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
