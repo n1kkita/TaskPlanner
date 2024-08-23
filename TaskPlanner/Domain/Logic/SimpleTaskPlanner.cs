@@ -5,7 +5,7 @@ namespace TaskPlanner.Domain.Logic
 {
     public class SimpleTaskPlanner
     {
-        public List<WorkItem> CreatePlan(List<WorkItem> workItems)
+        public static List<WorkItem> CreatePlan(List<WorkItem> workItems)
         {
             return workItems
                 .OrderByDescending(wi => wi.Priority)   // Спочатку сортуємо за Priority за спаданням

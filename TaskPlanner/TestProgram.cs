@@ -7,9 +7,7 @@ internal static class Program
 {
     public static void Main(string[] args)
     {
-        
-        var planner = new SimpleTaskPlanner();
-        var sortedWorkItems = planner.CreatePlan(GenerateItems());
+        var sortedWorkItems = SimpleTaskPlanner.CreatePlan(GenerateItems());
 
         Console.WriteLine("\nSorted Work Items:");
         foreach (var item in sortedWorkItems)
